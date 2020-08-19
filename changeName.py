@@ -1,11 +1,12 @@
 import os 
 
 def main(): 
+    folder = input("Masukkan nama folder sekaligus file: ")
 
-    for count, filename in enumerate(os.listdir("alif")): 
-        dst ="alif_" + str(count) + ".jpg"
-        src ='alif\\'+ filename 
-        dst ='alif\\'+ dst 
+    for count, filename in enumerate(os.listdir(folder)): 
+        dst = folder + "_" + str(count) + ".jpg"
+        src = folder + '\\' + filename 
+        dst = folder + '\\' + dst 
 
         os.rename(src, dst) 
 
