@@ -18,8 +18,6 @@ def main():
                 os.rename(src, dst) 
             except:
                 print("File Sudah Ada")
-            finally:
-                pass
 
 if __name__ == '__main__': 
     main() 
